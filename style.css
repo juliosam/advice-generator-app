@@ -1,0 +1,60 @@
+*{box-sizing: border-box;
+ font-family: "Manrope";}
+
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color:hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    min-height: 200px;
+    width: 560px;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 50px;
+    border-radius: 18px;
+    position: relative;
+}
+
+.card__title{
+    margin-top: 5px;
+    color:hsl(150, 100%, 66%);
+    font-weight: 600;
+}
+
+.card__paragraph{
+    font-size: 28px;
+    color:hsl(193, 38%, 86%);
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.card__divider-img-mobile{
+    display: none;
+}
+
+.card__divider-img-desktop{
+    margin-bottom: 20px;
+}
+
+.card__button{
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    bottom: -32px;
+    left: 248px;
+}
+
+.card__button img{margin-top: 2px;}
+
