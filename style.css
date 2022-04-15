@@ -1,9 +1,7 @@
 *{box-sizing: border-box;
  font-family: "Manrope";}
 
-body{
-    margin: 0;
-}
+body{ margin: 0;}
 
 .container{
     height: 100vh;
@@ -27,7 +25,8 @@ body{
 .card__title{
     margin-top: 5px;
     color:hsl(150, 100%, 66%);
-    font-weight: 600;
+    font-weight: 800;
+    letter-spacing: 4px;
 }
 
 .card__paragraph{
@@ -37,13 +36,9 @@ body{
     margin-bottom: 40px;
 }
 
-.card__divider-img-mobile{
-    display: none;
-}
+.card__divider-img-mobile{ display: none }
 
-.card__divider-img-desktop{
-    margin-bottom: 20px;
-}
+.card__divider-img-desktop{ margin-bottom: 20px;}
 
 .card__button{
     width: 64px;
@@ -56,5 +51,39 @@ body{
     left: 248px;
 }
 
+.card__button:hover{
+    box-shadow: rgb(87, 255, 185, 0.56) 0px 0px 70px 4px;
+    background-color: hsl(150, 100%, 70%);
+    cursor: pointer;
+}
+
+.card__button:active{
+    box-shadow: rgb(87, 255, 185, 0.56) 0px 0px 50px 2px;
+    background-color: hsl(150, 100%, 61%);
+}
+
 .card__button img{margin-top: 2px;}
+
+@media (max-width:600px){
+    .card{
+        width: 350px;
+        padding: 50px 20px 50px 20px;
+    }
+
+    .card__divider-img-desktop{ display: none; }
+
+    .card__divider-img-mobile{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card__button{ left: 137px;}
+
+    .card__button:hover{
+        box-shadow: none;
+        background-color: hsl(150, 100%, 66%);
+    }
+}
+
+
 
